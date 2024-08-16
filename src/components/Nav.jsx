@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { GoHomeFill } from "react-icons/go";
 import { HiMiniUsers } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import { MdOutlineWebAsset } from "react-icons/md";
 
 const Nav = () => {
   const location = useLocation();
@@ -11,6 +12,11 @@ const Nav = () => {
       title: "Home",
       path: "/",
       icon: <GoHomeFill size={20} />,
+    },
+    {
+      title: "Web Client",
+      path: "/web-client",
+      icon: <MdOutlineWebAsset size={20} />,
     },
     {
       title: "About Us",

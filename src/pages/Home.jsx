@@ -2,6 +2,7 @@ import heroBg from "../assets/bg.jpg";
 import logo from "../assets/logo.png";
 import googleplay from "../assets/googleplay.jpg";
 import appstore from "../assets/appstore.jpg";
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div className="transparent min-h-screen relative">
@@ -20,12 +21,19 @@ export default function Home() {
           Light the torches. Join the network!
         </h1>
         <div className="flex sm:flex-row flex-col sm:gap-0 gap-5 mt-5">
-          <button className="mr-4 bg-white py-2 font-bold rounded-lg text-sm px-6 w-[200px] hover:bg-gray-200">
+          <Link
+            to={"/web-client"}
+            className="mr-4 bg-white py-2 font-bold rounded-lg text-sm px-6 w-[200px] hover:bg-gray-200"
+          >
             Open Web Client
-          </button>
-          <button className="mr-4 bg-white py-2 font-bold rounded-lg text-sm px-6 w-[200px] hover:bg-gray-200">
+          </Link>
+          <a
+            href="https://github.com/adixiong/"
+            target="_blank"
+            className="mr-4 bg-white py-2 font-bold rounded-lg text-sm px-6 w-[200px] hover:bg-gray-200"
+          >
             Github
-          </button>
+          </a>
         </div>
         <div className="flex sm:flex-row gap-5 sm:gap-0 flex-col mt-6">
           <img
